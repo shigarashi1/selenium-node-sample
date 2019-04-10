@@ -1,0 +1,41 @@
+{
+  "name": "selenium-node-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "NODE_ENV=test jest src/index.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shigarashi1/selenium-node-sample.git"
+  },
+  "author": "shigarashi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shigarashi1/selenium-node-sample/issues"
+  },
+  "homepage": "https://github.com/shigarashi1/selenium-node-sample#readme",
+  "dependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.2",
+    "config": "^3.1.0",
+    "moment": "^2.24.0",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.3"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.34",
+    "@types/moment": "^2.13.0",
+    "@types/selenium-webdriver": "^4.0.0",
+    "husky": "^1.3.1",
+    "jest": "^24.7.1",
+    "prettier": "^1.16.4",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.15.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1"
+  }
+}

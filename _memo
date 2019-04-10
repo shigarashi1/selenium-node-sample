@@ -1,0 +1,16 @@
+
+npm install typescript selenium-webdriver ts-node config moment
+npm install --save-dev husky jest prettier tslint
+npm install --save-dev @types/selenium-webdriver @types/moment @types/config @types/node
+
+// Nodejsを使ってSeleniumでChromeを動かす
+https://qiita.com/tonio0720/items/70c13ad304154d95e4bc
+
+// Facebook製のJavaScriptテストツール「Jest」の逆引き使用例
+https://qiita.com/chimame/items/e97883fd46b67529d59f
+
+// screen shot
+https://stackoverflow.com/questions/22938045/selenium-webdriver-node-js-take-screenshot-and-save-test-results
+
+// TypeScriptでREST APIをテスト駆動するためのHowTo
+https://qiita.com/kotauchisunsun/items/6361b8f53540404a4a20

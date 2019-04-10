@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "tslint-config-prettier"
+  ],
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "rules": {
+    "no-var": 2,
+    "prettier": [
+      true,
+      {
+        "printWidth": 200,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "arrowParens": "avoid",
+        "rangeStart": 0,
+        "parser": "typescript",
+        "requirePragma": false,
+        "insertPragma": false,
+        "proseWrap": "preserve"
+      }
+    ],
+  }
+}
