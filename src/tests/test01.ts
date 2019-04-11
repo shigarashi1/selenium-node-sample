@@ -24,8 +24,19 @@ export default () => {
       await driver.findElement(webdriver.By.xpath('//*[@id="tsf"]/div[2]/div/div[3]/center/input[1]')).click();
     });
 
+    it('getResultCount', async done => {
+      // get text
+      await driver
+        .findElement(webdriver.By.xpath('//*[@id="resultStats"]'))
+        .getText()
+        .then(text => {
+          console.log(text);
+          expect(text).toBeDefined();
+          done();
+        });
+    });
+
     it('screen shot', async done => {
-      await driver.findElement(webdriver.By.xpath('//*[@id="resultStats"]/nobr'));
       // get screen shot
       await driver.takeScreenshot().then(image => {
         const date = moment().format('YYYYMMDD_HHmmss');

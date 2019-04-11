@@ -12,7 +12,12 @@ const start = async () => {
   await driver.findElement(webdriver.By.xpath('//*[@id="tsf"]/div[2]/div/div[1]/div/div[1]/input')).sendKeys('selenium node');
   await driver.findElement(webdriver.By.xpath('//*[@id="tsf"]/div[2]/div/div[3]/center/input[1]')).click();
 
-  await driver.findElement(webdriver.By.xpath('//*[@id="resultStats"]/nobr'));
+  await driver
+    .findElement(webdriver.By.xpath('//*[@id="resultStats"]/nobr'))
+    .getText()
+    .then(text => {
+      console.log(text);
+    });
   await driver
     .takeScreenshot()
     .then(image => {
@@ -22,7 +27,14 @@ const start = async () => {
       return true;
     })
     .then(value => {
-      driver.close();
+      driver
+        .close()
+        .then(() => {
+          process.exit(0);
+        })
+        .catch(() => {
+          process.exit(1);
+        });
     });
 };
 
