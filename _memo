@@ -1,7 +1,7 @@
 
-npm install typescript selenium-webdriver ts-node config moment
+npm install typescript selenium-webdriver ts-node config moment chromedriver
 npm install --save-dev husky jest prettier tslint
-npm install --save-dev @types/selenium-webdriver @types/moment @types/config @types/node
+npm install --save-dev @types/selenium-webdriver @types/moment @types/config @types/node @types/chromedriver
 
 // Nodejsを使ってSeleniumでChromeを動かす
 https://qiita.com/tonio0720/items/70c13ad304154d95e4bc
