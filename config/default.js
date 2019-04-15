@@ -7,6 +7,10 @@ module.exports = {
     "--no-sandbox",
     // Disables GPU hardware acceleration. If software renderer is not in place, then the GPU process won't launch.
     "--disable-gpu",
-    "--window-size=1980,1200" 
+    // Use a specific disk cache location, rather than one derived from the UserDatadir.
+    // "--disk-cache-dir",
+    // DirectWrite FontCache is shared by browser to renderers using shared memory. This switch allows us to pass the shared memory handle to the renderer.
+    // "--font-cache-shared-handle"
+    "--window-size=1980,1200"
   ]
 }

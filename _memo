@@ -1,7 +1,7 @@
 
 npm install typescript selenium-webdriver ts-node config moment chromedriver
-npm install --save-dev husky jest prettier tslint
 npm install --save-dev @types/selenium-webdriver @types/moment @types/config @types/node @types/chromedriver
+npm install --save-dev husky jest prettier tslint
 
 // Nodejsを使ってSeleniumでChromeを動かす
 https://qiita.com/tonio0720/items/70c13ad304154d95e4bc
@@ -14,3 +14,6 @@ https://stackoverflow.com/questions/22938045/selenium-webdriver-node-js-take-scr
 
 // TypeScriptでREST APIをテスト駆動するためのHowTo
 https://qiita.com/kotauchisunsun/items/6361b8f53540404a4a20
+
+// chromedriver capabilities
+https://peter.sh/experiments/chromium-command-line-switches/
