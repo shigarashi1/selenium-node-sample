@@ -11,7 +11,7 @@ export default () => {
   // jest timeout setting
   jest.setTimeout(30000);
 
-  describe('test 01', () => {
+  describe('test01.ts', () => {
     let driver: webdriver.ThenableWebDriver;
 
     // get driver
