@@ -31,7 +31,7 @@ export default () => {
 
     // driver close
     afterAll(() => {
-      driver.close();
+      driver.quit();
     });
 
     it('Search [selenium node]', async () => {
