@@ -5,7 +5,7 @@
 # get repository source
 $ git clone https://github.com/shigarashi1/selenium-node-sample.git
 
-# get node_modules
+# install node_modules
 $ npm install
 
 # start test

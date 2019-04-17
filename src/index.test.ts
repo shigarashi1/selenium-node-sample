@@ -1,6 +1,6 @@
 import * as jest from 'jest';
-import test01 from './tests/test01';
+import chrome from './tests/selenium/chrome';
 
-describe('TEST test01', () => {
-  test01();
+describe('TEST Start Chrome', () => {
+  chrome();
 });

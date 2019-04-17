@@ -4,8 +4,8 @@ import * as chromedriver from 'chromedriver';
 import * as moment from 'moment';
 import * as fs from 'fs';
 
-import * as enviroment from '../configurations/enviroment';
-import * as commonUtility from '../utilities/common';
+import * as enviroment from '../../configurations/enviroment';
+import * as commonUtility from '../../utilities/common';
 
 export default () => {
   // jest timeout setting
