@@ -11,7 +11,7 @@ export default () => {
   // jest timeout setting
   jest.setTimeout(30000);
 
-  describe('test01.ts', () => {
+  describe('Selenium Chrome Driver Test Start.', () => {
     let driver: webdriver.ThenableWebDriver;
 
     // get driver
@@ -41,7 +41,7 @@ export default () => {
       await driver.findElement(webdriver.By.xpath('//*[@id="tsf"]/div[2]/div/div[3]/center/input[1]')).click();
     });
 
-    it('Get Result Count Wait', async done => {
+    it('Get Result Count', async done => {
       const path = '//*[@id="resultStats"]';
       // wait
       const elment = await driver.wait(webdriver.until.elementLocated(webdriver.By.xpath(path)), 10000);
