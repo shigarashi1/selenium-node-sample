@@ -80,12 +80,5 @@ export default () => {
         done();
       });
     });
-
-    it('Sleep 5m', async done => {
-      setTimeout(() => {
-        console.log('sleeped.');
-        done();
-      }, 5000);
-    });
   });
 };

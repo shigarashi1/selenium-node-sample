@@ -26,3 +26,5 @@ $ npm run test
 [TypeScriptでREST APIをテスト駆動するためのHowTo](https://qiita.com/kotauchisunsun/items/6361b8f53540404a4a20)
 
 [chromedriver capabilities](https://peter.sh/experiments/chromium-command-line-switches/)
+
+[ヘッドレス Chrome Node API 「Puppeteer」](https://qiita.com/bezeklik/items/c6448d50ff0efb45829e)
