@@ -74,7 +74,7 @@ export default () => {
 
     it('Get Screen Shot', async done => {
       await driver.takeScreenshot().then(image => {
-        const date = moment().format('YYYYMMDD_HHmmss');
+        const date = moment().format('YYYYMMDD_HHmmss') + '_chrome';
         const filePath = commonUtility.joinPathAndName(enviroment.screenShotPath, `${date}_screen.png`);
         fs.writeFileSync(filePath, image, 'base64');
         done();

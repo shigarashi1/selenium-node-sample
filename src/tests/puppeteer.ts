@@ -73,7 +73,7 @@ export default () => {
     });
 
     it('Get Screen Shot', async done => {
-      const date = moment().format('YYYYMMDD_HHmmss');
+      const date = moment().format('YYYYMMDD_HHmmss') + '_puppeteer';
       const filePath = commonUtility.joinPathAndName(enviroment.screenShotPath, `${date}_screen.png`);
       await page.screenshot({ path: filePath, fullPage: true });
       done();
